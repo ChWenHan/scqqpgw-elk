@@ -1,0 +1,14 @@
+The simplist way to implement the qp-gw.
+1)By analytical continueing the imaginary self-energy , the ΔSEr in real domain is 
+firstly hermitinatized and set to be static(by picking the poles at eigvals, different from the 'static' in cohsex method). 
+2)Then, the new SEr is added into the DFT hamiltonian. 
+3)The diagonalization of the hamiltonian will consequently ggive the new eigenvalues and eigenvecs.
+4)The new eigvals and eigvecs are then used to generate new the basis(basically the apw/lo function and Vxc(r) ) of the next DFT iteration.
+
+Should be noticed that, for each sc loop, the previous DFT calculation is required as the ΔSE used
+in diagonalization is written as : ΔSE = SE_x+SEi_c - V_xc. Thus the Hamiltonian is :H_ij = ε_ij + ΔSE_ij.
+
+
+The problem for this code is the bad convergence.
+One can probably see that for most cases the calculation is fluctuating around a certain energy range(~0.01Ha-0.001Ha), but never stable.
+That may due to the instable AC code in Elk. 

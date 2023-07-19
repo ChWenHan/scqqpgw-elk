@@ -1,0 +1,9 @@
+#!/bin/bash
+SHELL_FOLDER=$(cd "$(dirname "$0")";pwd)
+echo $SHELL_FOLDER
+rm $SHELL_FOLDER/DFT*
+rm $SHELL_FOLDER/eig0*
+rm $SHELL_FOLDER/EIG*ISCL*
+rm $SHELL_FOLDER/SE*
+rm $SHELL_FOLDER/VSE*
+rm $SHELL_FOLDER/WR*

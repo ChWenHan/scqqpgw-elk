@@ -1,0 +1,111 @@
+
+tasks
+ 0
+ 631
+
+maxscl
+ 40
+
+maxsclgw
+ 15
+
+
+hybrid
+ .false.
+
+writeseiw
+ .true.
+
+dmatfromseiw
+ .false.
+
+
+nempty
+ 8
+
+nwrite
+ 1
+
+actype
+ 10
+
+npole
+ 3
+
+nspade
+ 1000
+
+mixse
+ .true.
+
+alphagw
+ 0.25
+
+hfgw 
+ .false.
+
+readepsinv
+ .false.
+
+qprenorm
+ .false.
+
+calcgw
+ .true.
+
+tvse
+ .false.
+
+fscgw
+ 0
+
+epsengy
+ 1.d-3
+
+
+tsediag
+ .false.
+
+twdiag
+ .false.
+
+gmaxrf
+ 4.0
+
+wmaxgw
+ -1.2
+
+tempkgw
+ 2000
+
+
+tempk
+ 300
+
+ngridk
+  4  4  4
+
+ngridq
+ 2 2 2
+
+lorbcnd
+ .true.
+
+
+
+avec
+  0.5  0.5 -0.5
+  0.5 -0.5  0.5
+ -0.5  0.5  0.5
+
+scale
+  6.6226
+
+sppath
+  '/mnt/f/work/elk/elk_hfgw/elk-8.4.6/species/'
+
+atoms
+  1                                   : nspecies
+  'Li.in'                             : spfname
+  1                                   : natoms; atposl below
+  0.0  0.0  0.0
